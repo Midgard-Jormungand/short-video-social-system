@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Video</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/svss.css" rel="stylesheet">
+</head>
+<body>
+<div id="video-top-bar">
+    <div class="text-center" style="width:10%;height:45px;line-height: 45px;">
+        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+    </div>
+    <div class="text-center"  style="width:10%;height:45px;line-height: 45px;">
+        <img src="../img/heart.png" style="width:24px;height: 24px">
+    </div>
+    <div class="video-uper" style="width: 80%;">
+        <div class="uper" onclick="window.location.href='visit.html'">不必送达的信</div>
+        <button type="button" class="btn btn-default btn-sm">已关注</button>
+    </div>
+</div>
+<div id="video-content">
+    <div class="video-player">
+        <video src="../video/35_caocao_g00001_2.mp4" poster="../vImg/34.jpg" preload="auto"  controls="controls" style="width:100%;" autoplay="autoplay"></video>
+    </div>
+    <div class="video-info">
+        <div class="video-intro">
+            视频简介简介简介简介简介简介简介简介简介
+        </div>
+        <div>
+            <small style="display:inline-block;width:10%;">游戏</small>
+            <small style="display:inline-block;">两天前</small>
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+            <span style="display:inline-block;width:20%;"> 20005</span>
+            <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+            <span> 1000</span>
+        </div>
+        <div class="comment-count">
+            2687评论
+        </div>
+    </div>
+    <div class="video-comment">
+        <div class="comment-item">
+            <div class="comment-left">
+                <div class="comment-user">hgzhgzhgz</div>
+                <div>
+                    <div class="comment-content">评论评论评论评论评论a哈哈哈</div>
+                    <div class="comment-time">一天前</div>
+                </div>
+            </div>
+            <div class="comment-right">
+                <div class="comment-img"><img src="../img/heart.png" style="width:45%"></div>
+                <div class="comment-like">80</div>
+            </div>
+        </div>
+        <div class="comment-item">
+            <div class="comment-left">
+                <div class="comment-user">hgzhgzhgz</div>
+                <div>
+                    <div class="comment-content">评论评论评论评论评论a哈哈哈</div>
+                    <div class="comment-time">一天前</div>
+                </div>
+            </div>
+            <div class="comment-right">
+                <div class="comment-img"><img src="../img/heart.png" style="width:45%"></div>
+                <div class="comment-like">80</div>
+            </div>
+        </div>
+        <div class="comment-item">
+            <div class="comment-left">
+                <div class="comment-user">hgzhgzhgz</div>
+                <div>
+                    <div class="comment-content">评论评论评论评论评论a哈哈哈</div>
+                    <div class="comment-time">一天前</div>
+                </div>
+            </div>
+            <div class="comment-right">
+                <div class="comment-img"><img src="../img/heart.png" style="width:45%"></div>
+                <div class="comment-like">80</div>
+            </div>
+        </div>
+        <div class="comment-item">
+            <div class="comment-left">
+                <div class="comment-user">hgzhgzhgz</div>
+                <div>
+                    <div class="comment-content">评论评论评论评论评论a哈哈哈</div>
+                    <div class="comment-time">一天前</div>
+                </div>
+            </div>
+            <div class="comment-right">
+                <div class="comment-img"><img src="../img/heart.png" style="width:45%"></div>
+                <div class="comment-like">80</div>
+            </div>
+        </div>
+        <div class="comment-item">
+            <div class="comment-left">
+                <div class="comment-user">hgzhgzhgz</div>
+                <div>
+                    <div class="comment-content">评论评论评论评论评论a哈哈哈</div>
+                    <div class="comment-time">一天前</div>
+                </div>
+            </div>
+            <div class="comment-right">
+                <div class="comment-img"><img src="../img/heart.png" style="width:45%"></div>
+                <div class="comment-like">80</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="video-bottom-bar">
+    <div style="width:90%;">
+        <input class="comment-input" type="text" placeholder="说点什么...">
+    </div>
+    <div class="text-center" style="width:10%;height: 40px;line-height: 40px">
+        <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+    </div>
+</div>
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div style="height: 100%;width: 100%;display: flex;align-items: center">
+        <div class="modal-content" style="width:100%;margin:0 10px">
+            <div class="model-button" data-dismiss="modal" onclick="alert('hello')">删除</div>
+            <div class="model-button" data-dismiss="modal">取消</div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<configuration>
+
+  <property name="logDir" value="./target/logs"/>
+
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${logDir}/application.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${logDir}/application.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <!-- keep 365 days' worth of history -->
+      <maxHistory>365</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-4relative %-5level %logger{42} [%thread] %X{akkaSource} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="com.neo" level="INFO" additivity="true" />
+  <logger name="akka" level="INFO" additivity="true"/>
+
+  <root level="INFO">
+    <appender-ref ref="FILE" />
+  </root>
+</configuration>
