@@ -1,2 +1,2 @@
 # svss
-### a （poor） short video social system 
+### a short video social system 
