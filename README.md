@@ -1,2 +1,2 @@
-# svss
+# vedfolnir
 ### a short video social system 
